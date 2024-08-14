@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LR-Argentino/config
+          searchPaths: licensingservice
+          username: LR-Argentino
+          password:
+          skip-ssl-validation: true
+server:
+  port: 8071
+encrypt:
+  key: secretkey
