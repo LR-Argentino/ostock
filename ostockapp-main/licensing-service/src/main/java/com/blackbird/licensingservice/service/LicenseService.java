@@ -24,7 +24,6 @@ public class LicenseService {
 	@Autowired
 	private OrganizationFeignClient organizationFeignClient;
 
-	// https://flybooking.com/flug/italine
 	/***
 	 * Hier verwenden wir den @CircuitBreaker weil wir einen anderen Service aufrufen
 	 * @param licenseId
